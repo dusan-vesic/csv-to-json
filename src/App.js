@@ -8,7 +8,7 @@ function App() {
     fetch("/.netlify/functions/hello")
       .then((res) => res.json())
       .then((data) => {
-        setUsers(data.users);
+        setUsers(data);
       });
   }, []);
 
